@@ -1,2 +1,2 @@
 # symboa
-A JavaScript library for symbolic mathematics
+[ In development ] A JavaScript library for symbolic mathematics
