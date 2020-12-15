@@ -7,7 +7,7 @@ const {
   isRightParan,
   precedenceTable: operators,
   top,
-} = require('./shunting-yard');
+} = require('./utils');
 
 const Node = function () {
   function Node(data) {
@@ -82,7 +82,7 @@ const Expression = function() {
     [this.tree] = buildExpressionTree(this.expression);
   }
 
-  Expression.prototype._evaluate = function(node = this.tree) {
+  Expression.prototype._evaluate = function(node = this.tree, values = {}) {
     if (node) {
       if (isOperand(node.data)) { 
         return parseFloat(node.data);
