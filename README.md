@@ -29,3 +29,5 @@ const res = exp.evaluate({ x: 3.14, y: 2 });
  - `xy` gets treated as a single variable; `x y` get treated as two different variables x and y.
 
  - Provides just about any function in Math.
+
+Have nice day and nicer sym-boeing!
